@@ -1,0 +1,15 @@
+.data_not_entered {
+    color: red;
+}
+.valid_amount {
+    color: green;
+    border: 1px solid green;
+    background-color: beige;
+    display: inline;
+}
+.invalid_amount {
+    color: black;
+    border: 1px solid red;
+    background-color: red;
+    display: inline;
+}

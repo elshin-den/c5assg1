@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Lunch menu app</title>
+</head>
+<body ng-app="LunchCheck">
+    <div ng-controller="LunchCheckController">
+        <input type="text" ng-model="lunch_items">
+        <button ng-click="validateItemsAndOutput();">
+            Check if too much!
+        </button>
+        <br>
+        <div ng-class="style">
+            {{message}}
+        </div>
+        <div>
+            Beware: empty item doesn't count!
+        </div>
+    </div>
+</body>
+</html>
